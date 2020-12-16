@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+
+.header {
+	display: inline-block;
+	width: 100%;
+	height: 100vh;
+	background: #1488cc; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to top,
+		#2b32b2,
+		#1488cc
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0020d3d3, #0035d4e7);
+	&__resume {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: $color-white;
+			text-transform: uppercase;
+			font-size: 2.4rem;
+		}
+		&:hover,
+		&:active {
+			color: $color-white;
+		}
+	}
+	&__wave{
+		display: inline-block;
+		height: 250px;
+		width: 100%;
+		position: relative;
+		&--svg{
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
