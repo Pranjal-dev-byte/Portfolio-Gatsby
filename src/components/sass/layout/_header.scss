@@ -11,6 +11,11 @@
 		#1488cc
 	); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #0020d3d3, #0035d4e7);
+	&__social--wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	&__resume {
 		&:link,
 		&:visited {
@@ -24,12 +29,12 @@
 			color: $color-white;
 		}
 	}
-	&__wave{
+	&__wave {
 		display: inline-block;
 		height: 250px;
 		width: 100%;
 		position: relative;
-		&--svg{
+		&--svg {
 			display: inline-block;
 			height: 100%;
 			width: 100%;
