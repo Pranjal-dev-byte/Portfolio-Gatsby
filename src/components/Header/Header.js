@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TypeEffect from './TypeEffect';
 import Wave from './Wave';
 import BrandLogo from './BrandLogo';
 import linkedIn from '../../img/linked.svg';
 import git from '../../img/github.svg';
 import insta from '../../img/insta.svg';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import NavLinks from './NavLinks';
 
 gsap.registerPlugin(ScrollTrigger);
-const Header = () => {
+const Header = (props) => {
 	const bounce = useRef(null);
 	const bounceSocial = useRef(null);
 
@@ -54,25 +55,21 @@ const Header = () => {
 					}`}
 				>
 					<BrandLogo />
-					<ul className='header__nav--list'>
-						<li className='header__nav--items'>Home</li>
-						<li className='header__nav--items'>About</li>
-						<li className='header__nav--items'>Projects</li>
-					</ul>
+					<NavLinks props={props.refProps} />
 				</nav>
 				<div
 					className={`header__content ${
 						state === 'fixed' ? 'padding-offset' : ''
 					}`}
 				>
-					<h1 class='heading__primary'>
-						<span ref={bounce} class='heading__primary--main'>
+					<h1 className='heading__primary'>
+						<span ref={bounce} className='heading__primary--main'>
 							Pranjal Misra
 						</span>
 						<TypeEffect />
 						<div ref={bounceSocial} className='header__social--wrap'>
-							<div class='heading__primary--icons'>
-								<span class='heading__primary--icon'>
+							<div className='heading__primary--icons'>
+								<span className='heading__primary--icon'>
 									<a
 										target='_blank'
 										rel='noreferrer'
@@ -81,7 +78,7 @@ const Header = () => {
 										<img src={linkedIn} alt='LinkedIn Profile' />
 									</a>
 								</span>
-								<span class='heading__primary--icon'>
+								<span className='heading__primary--icon'>
 									<a
 										target='_blank'
 										rel='noreferrer'
@@ -90,7 +87,7 @@ const Header = () => {
 										<img src={git} alt='LinkedIn Profile' />
 									</a>
 								</span>
-								<span class='heading__primary--icon'>
+								<span className='heading__primary--icon'>
 									<a
 										target='_blank'
 										rel='noreferrer'
@@ -101,14 +98,14 @@ const Header = () => {
 								</span>
 							</div>
 							<button
-								class='btn btn-resume u-margin-medium-top'
+								className='btn btn-resume u-margin-medium-top'
 								id='animateSocial'
 							>
 								<a
 									target='_blank'
 									rel='noreferrer'
 									href='https://drive.google.com/file/d/1nCODWuXSJ7XEsrvIuGeJsmMMitustSSa/view?usp=sharing'
-									class='header__resume'
+									className='header__resume'
 								>
 									Resume
 								</a>
