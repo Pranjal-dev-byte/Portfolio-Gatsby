@@ -16,7 +16,7 @@
 	}
 	&:hover {
 		transform: translateY(-1px);
-		box-shadow: 0.6rem 0.8rem 0.5rem rgba($color-shadow, 0.2);
+		box-shadow: 0 0.4rem 0.7rem 0.5rem rgba(82, 136, 252, 0.2);
 		&::after {
 			transform: scaleX(1) scaleY(1);
 			opacity: 0;
@@ -32,7 +32,7 @@
 		padding: 1.22rem 1.4rem;
 		font-size: 1.24rem;
 		background-color: rgb(82, 136, 252);
-		margin-left: .6rem;
+		margin-left: 0.6rem;
 	}
 	&-white {
 		border: 0.3rem solid #396afc;

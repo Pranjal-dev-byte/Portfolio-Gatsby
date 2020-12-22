@@ -1,6 +1,7 @@
 .project {
-	border-bottom: 0.5px solid hsl(0, 2%, 70%);
 	display: flex;
+	border-bottom: 0.5px solid hsl(0, 2%, 70%);
+
 	justify-content: space-around;
 	height: 40rem;
 	padding: 1rem 2rem;
@@ -80,5 +81,8 @@
 			font-weight: 600;
 			text-transform: uppercase;
 		}
+	}
+	&:last-of-type {
+		border-bottom: none !important;
 	}
 }
