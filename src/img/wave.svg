@@ -1,1 +1,9 @@
-<svg height="100%" width="100%" id="bg-svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#002bdcff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,300 0,300 C 156.66666666666669,349.3333333333333 313.33333333333337,398.66666666666663 473,388 C 632.6666666666666,377.33333333333337 795.3333333333333,306.6666666666667 957,282 C 1118.6666666666667,257.3333333333333 1279.3333333333335,278.66666666666663 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#ffffff" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="198">
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="-10.959%" y2="100%">
+      <stop stop-color="#fff" stop-opacity=".25" offset="0%"/>
+      <stop stop-color="#fff" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" fill-rule="evenodd" d="M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z" transform="matrix(-1 0 0 1 1600 0)"/>
+</svg>
