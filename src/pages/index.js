@@ -19,11 +19,20 @@ const IndexPage = () => {
 				<meta charSet='utf-8' />
 				<meta name='mobile-web-app-capable' content='yes' />
 				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1, shrink-to-fit=no'
+				/>
+				<meta
 					name='google-site-verification'
 					content='1jmmWqXLbh_oWXtPqZcsuhGpm-Kd66nIaQhi2Uk3QB8'
 				/>
 				<link rel='icon' href={favicon} type='image/x-icon' />
 				<title>Portfolio | Pranjal</title>
+				<meta name='title' content='Portfolio Website' />
+				<meta
+					name='description'
+					content='A portfolio website made on gatsby showcasing projects and my passion regarding development.'
+				/>
 			</Helmet>
 			<div ref={headerRef}>
 				<Header refProps={[headerRef, aboutRef, projectRef]} />
