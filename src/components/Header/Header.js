@@ -8,6 +8,7 @@ const Header = (props) => {
 	const [state, setState] = useState('initial');
 	useEffect(() => {
 		function handleWindowMouseMove() {
+			console.log(window.scrollY);
 			window.scrollY > 10 ? setState('fixed') : setState('initial');
 		}
 		window.addEventListener('scroll', handleWindowMouseMove);

@@ -20,7 +20,7 @@ const TypeEffect = () => {
 		});
 	}, []);
 	return (
-		<span ref={text} class='heading__primary--sub'>
+		<span ref={text} className='heading__primary--sub'>
 			&nbsp;
 		</span>
 	);
