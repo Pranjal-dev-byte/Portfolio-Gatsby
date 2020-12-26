@@ -21,6 +21,9 @@ body {
 		font-size: 4.8rem;
 		font-weight: 600;
 		padding: 0.6rem;
+		@include respond(tab-port) {
+			letter-spacing: 1rem;
+		}
 		@include respond(phone) {
 			letter-spacing: 0.5rem;
 		}
@@ -34,6 +37,9 @@ body {
 		justify-content: center;
 		align-items: center;
 		padding: 1rem;
+		@include respond(tab-port) {
+			letter-spacing: 0.8rem;
+		}
 		@include respond(phone) {
 			letter-spacing: 0.5rem;
 		}

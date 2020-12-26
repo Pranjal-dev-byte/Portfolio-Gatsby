@@ -30,7 +30,7 @@
 		font-size: 2.2rem;
 		@include respond(tab-port) {
 			transition: all 3s;
-			padding: 2rem 0;
+			padding: 0.6rem 0 1.8rem 0;
 			background-color: #5288fc;
 			position: absolute;
 			width: 100%;
@@ -60,6 +60,9 @@
 }
 .header__content {
 	padding: 12.5rem 12.5rem 0rem 12.5rem;
+	@include respond(phone) {
+		padding: 12.5rem 0.5rem 0rem 0.5rem;
+	}
 }
 .padding-offset {
 	padding-top: 26rem !important;

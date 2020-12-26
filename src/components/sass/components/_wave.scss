@@ -5,6 +5,12 @@
 	bottom: 0;
 	left: 0;
 	background: #fff;
+	@include respond(tab-port) {
+		bottom: -7.4rem;
+	}
+	@include respond(tab-port) {
+		bottom: -14rem;
+	}
 }
 
 .wave {

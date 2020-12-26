@@ -25,7 +25,7 @@ const BrandLogo = () => {
 		},
 	};
 	return (
-		<div className='svg__wrap' style={{ height: '7rem', width: '16rem' }}>
+		<div className='svg__wrap' style={{ height: '7rem', width: '8rem' }}>
 			<motion.svg
 				className='header__nav--svg'
 				xmlns='http://www.w3.org/2000/svg'
