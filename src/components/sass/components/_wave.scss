@@ -1,5 +1,5 @@
 .ocean {
-	height: 2%;
+	height: 28%;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -8,8 +8,8 @@
 	@include respond(tab-port) {
 		bottom: -7.4rem;
 	}
-	@include respond(tab-port) {
-		bottom: -14rem;
+	@include respond(phone) {
+		bottom: -34rem;
 	}
 }
 

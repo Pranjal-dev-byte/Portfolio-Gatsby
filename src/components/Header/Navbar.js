@@ -14,7 +14,6 @@ const Navbar = (props) => {
 
 	const ontoggle = () => {
 		setToggle(!toggle);
-		console.log(toggle);
 	};
 	useEffect(() => {
 		function updateWindowWidth() {
