@@ -22,7 +22,7 @@ const Navbar = (props) => {
 		}
 		window.addEventListener('resize', updateWindowWidth);
 		return () => window.removeEventListener('resize', updateWindowWidth);
-	}, [window.innerWidth]);
+	}, []);
 	return (
 		<React.Fragment>
 			<BrandLogo />
