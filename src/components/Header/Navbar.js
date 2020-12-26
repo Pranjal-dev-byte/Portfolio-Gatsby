@@ -3,7 +3,8 @@ import NavLinks from './NavLinks';
 import BrandLogo from './BrandLogo';
 import ham from '../../img/ham.png';
 
-const Navbar = (props) => {
+const Navbar = ({ props }) => {
+	console.log(props);
 	let defaultWidth;
 	const [toggle, setToggle] = useState(false);
 
@@ -34,10 +35,10 @@ const Navbar = (props) => {
 						className='header__nav--ham'
 						onClick={ontoggle}
 					/>
-					{toggle && <NavLinks props={props.refProps} />}
+					{toggle && <NavLinks props={props} />}
 				</React.Fragment>
 			) : (
-				<NavLinks props={props.refProps} />
+				<NavLinks props={props} />
 			)}
 		</React.Fragment>
 	);

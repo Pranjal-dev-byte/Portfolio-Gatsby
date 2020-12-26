@@ -1,6 +1,8 @@
 import React from 'react';
 
 const NavLinks = ({ props }) => {
+	console.log(props);
+
 	const executeScrollHome = () => props[0].current.scrollIntoView();
 	const executeScrollAbout = () => props[1].current.scrollIntoView();
 	const executeScrollProject = () => props[2].current.scrollIntoView();
