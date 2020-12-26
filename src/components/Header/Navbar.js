@@ -12,7 +12,7 @@ const Navbar = (props) => {
 	}
 	const [width, setWidth] = useState(defaultWidth);
 
-	ontoggle = () => {
+	const ontoggle = () => {
 		setToggle(!toggle);
 		console.log(toggle);
 	};
