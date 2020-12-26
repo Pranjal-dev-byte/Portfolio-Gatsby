@@ -4,8 +4,14 @@ import BrandLogo from './BrandLogo';
 import ham from '../../img/ham.png';
 
 const Navbar = (props) => {
+	let defaultWidth;
 	const [toggle, setToggle] = useState(false);
-	const [width, setWidth] = useState(window.innerWidth);
+
+	if (typeof window !== `undefined`) {
+		defaultWidth = window.innerWidth;
+	}
+	const [width, setWidth] = useState(defaultWidth);
+
 	ontoggle = () => {
 		setToggle(!toggle);
 		console.log(toggle);
