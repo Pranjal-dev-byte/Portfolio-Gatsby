@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Wave from './Wave';
-import BrandLogo from './BrandLogo';
 import SocialScroll from './SocialScroll';
-import NavLinks from './NavLinks';
+import Navbar from './Navbar';
 
 const Header = (props) => {
 	const [state, setState] = useState('initial');
 	useEffect(() => {
 		function handleWindowMouseMove() {
-			console.log(window.scrollY);
 			window.scrollY > 10 ? setState('fixed') : setState('initial');
 		}
 		window.addEventListener('scroll', handleWindowMouseMove);
@@ -22,8 +20,7 @@ const Header = (props) => {
 						state !== 'fixed' ? 'header__nav--initial' : 'header__nav--fixed'
 					}`}
 				>
-					<BrandLogo />
-					<NavLinks props={props.refProps} />
+					<Navbar props={props.refProps} />
 				</nav>
 				<div
 					className={`header__content ${
