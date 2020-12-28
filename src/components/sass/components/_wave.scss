@@ -1,5 +1,5 @@
 .ocean {
-	height: 28%;
+	height: 8%;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -10,6 +10,7 @@
 	}
 	@include respond(phone) {
 		bottom: -34rem;
+		height: 28%;
 	}
 }
 

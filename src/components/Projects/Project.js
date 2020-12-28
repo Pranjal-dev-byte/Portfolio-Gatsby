@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import blog from '../../img/blog-proj.svg';
 import ecom from '../../img/ecom-proj.svg';
-import maze from '../../img/maze-proj.svg';
 import ScrollAnimation from '../ScrollAnmation';
+import train from '../../img/train.svg';
+import goat from '../../img/GOAT.svg';
 
 const Project = () => {
 	const block1 = useRef(null);
@@ -20,7 +21,12 @@ const Project = () => {
 				Few Projects
 			</h2>
 			<div className='project' id='one'>
-				<img src={ecom} alt='project-1' className='project__img' ref={block1} />
+				<img
+					src={train}
+					alt='project-1'
+					className='project__img'
+					ref={block1}
+				/>
 				<div className='project__text' id='textOne' ref={block2}>
 					<h3 className='heading__tertiary u-margin-small'>
 						Learncool Web App
@@ -54,7 +60,7 @@ const Project = () => {
 				</div>
 			</div>
 			<div className='project' id='three'>
-				<img src={blog} alt='project-3' className='project__img' ref={block3} />
+				<img src={goat} alt='project-3' className='project__img' ref={block3} />
 				<div className='project__text' id='textThree' ref={block4}>
 					<h3 className='heading__tertiary u-margin-small'>Ridegoat Web App</h3>
 					<div className='project__text--section'>
@@ -85,19 +91,21 @@ const Project = () => {
 				</div>
 			</div>
 			<div className='project' id='three'>
-				<img src={blog} alt='project-3' className='project__img' ref={block5} />
+				<img src={ecom} alt='project-3' className='project__img' ref={block5} />
 				<div className='project__text' id='textThree' ref={block6}>
-					<h3 className='heading__tertiary u-margin-small'>
-						Paradise Landing Page
-					</h3>
+					<h3 className='heading__tertiary u-margin-small'>E-Commerce App</h3>
 					<div className='project__text--section'>
-						LANGUAGES AND TECHNOLOGIES USED: HTML, CSS, SCSS, VANILLA JS, FIGMA
+						LANGUAGES AND TECHNOLOGIES USED: HTML, CSS, NODE.JS, EXPRESS.JS,
+						CUSTOM DB
 						<br />
 						<p className='project__text--desc'>
-							Description: Landing page for a fictitious touring company.
-							Cutting-edge UI implemented via CSS preprocessor SCSS and Vanilla
-							JS. Along with a couple of animations to make user experience even
-							more appealing.
+							Description: Developed an E-Commerce website using cookies to
+							store registered user information. The passwords are salted and
+							stored in an encrypted format to enhance app security. A user can
+							add items to their cart, edit their cart. Whilst an admin has the
+							permission to edit or add products using the admin interface. All
+							of the user, admin, products information is stored in a JSON file
+							after processing via a custom database implemented via Node.js.
 						</p>
 					</div>
 					<div className='btn-wrap'>
@@ -125,7 +133,7 @@ const Project = () => {
 				</div>
 			</div>
 			<div className='project' id='four'>
-				<img src={maze} alt='project-4' className='project__img' ref={block7} />
+				<img src={blog} alt='project-4' className='project__img' ref={block7} />
 				<div className='project__text' id='textFour' ref={block8}>
 					<h3 className='heading__tertiary u-margin-small'>Blogging website</h3>
 					<div className='project__text--section'>
