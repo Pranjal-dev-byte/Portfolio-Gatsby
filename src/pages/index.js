@@ -5,7 +5,7 @@ import About from '../components/About/About';
 import Project from '../components/Projects/Project';
 import Footer from '../components/Footer/Footer';
 import '../components/app.scss';
-import Head from './head';
+import Head from '../components/head';
 
 // markup
 const IndexPage = () => {

@@ -26,5 +26,11 @@ module.exports = {
 				// purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
 			},
 		},
+		{
+			resolve: `gatsby-plugin-canonical-urls`,
+			options: {
+				siteUrl: `https://pranjals.live`,
+			},
+		},
 	],
 };
