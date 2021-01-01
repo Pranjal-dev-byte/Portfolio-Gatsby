@@ -17,6 +17,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	&--main {
+		animation: moveInLeft 3s forwards ease-in;
 		letter-spacing: 2rem;
 		font-size: 4.8rem;
 		font-weight: 600;

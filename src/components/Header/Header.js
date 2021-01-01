@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Wave from './Wave';
-import SocialScroll from './SocialScroll';
+import HeaderMain from './HeaderMain';
 import Navbar from './Navbar';
 
 const Header = (props) => {
@@ -28,7 +28,7 @@ const Header = (props) => {
 					}`}
 				>
 					<h1 className='heading__primary'>
-						<SocialScroll />
+						<HeaderMain />
 					</h1>
 				</div>
 				<Wave />
