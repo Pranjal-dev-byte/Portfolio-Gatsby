@@ -113,7 +113,7 @@ const Project = () => {
 							<a
 								target='_blank'
 								rel='noreferrer'
-								href='https://paradise-tours.netlify.app'
+								href='https://github.com/Pranjal-dev-byte/E-comm'
 								className='project__visit'
 							>
 								Visit Site
@@ -123,7 +123,7 @@ const Project = () => {
 							<a
 								target='_blank'
 								rel='noreferrer'
-								href='https://github.com/Pranjal-dev-byte/Paradise-tours'
+								href='https://github.com/Pranjal-dev-byte/E-comm'
 								className='project__link'
 							>
 								View Repo
