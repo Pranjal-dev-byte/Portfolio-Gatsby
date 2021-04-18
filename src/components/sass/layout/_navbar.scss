@@ -1,69 +1,70 @@
 .header__nav {
-	z-index: 3;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
-	padding: 4rem 2rem;
-	position: relative;
-	transition: all 1.2s;
-	color: $color-white;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  transition: all 1.2s;
+  color: rgb(82, 136, 252);
 
-	&--fixed {
-		// padding-top: ;
-		background-color: rgb(82, 136, 252);
-		position: fixed;
-		z-index: 5;
-		padding: 1rem 2rem;
-		transition: all 1.2s;
-		box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem rgba(82, 136, 252, 0.4);
-	}
-	&--list {
-		text-transform: uppercase;
-		cursor: pointer;
-		list-style-type: none;
-		width: 36.5%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		font-size: 2.2rem;
-		@include respond(tab-port) {
-			transition: all 3s;
-			padding: 0.6rem 0 1.8rem 0;
-			background-color: #5288fc;
-			position: absolute;
-			width: 100%;
-			font-size: 2.5rem;
-			bottom: -35px;
-			left: -1px;
-		}
-	}
-	&--svg {
-		display: inline-block;
-		width: inherit;
-		height: inherit;
-		fill: #ffffff;
-	}
-	&--ham {
-		height: 4rem;
-		margin: 2rem;
-		cursor: pointer;
-		position: relative;
-		&-links {
-			position: absolute;
-			top: 10;
-			left: 10;
-			width: 100%;
-		}
-	}
+  &--fixed {
+    // padding-top: ;
+    background-color: rgb(82, 136, 252);
+    position: fixed;
+    z-index: 5;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    transition: all 1.2s;
+    box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem rgba(82, 136, 252, 0.4);
+  }
+  &--list {
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style-type: none;
+    width: 36.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.2rem;
+    @include respond(tab-port) {
+      transition: all 3s;
+      padding: 0.6rem 0 1.8rem 0;
+      background-color: #5288fc;
+      position: absolute;
+      width: 100%;
+      font-size: 2.5rem;
+      bottom: -35px;
+      left: -1px;
+    }
+  }
+  &--svg {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    fill: #ffffff;
+  }
+  &--ham {
+    height: 4rem;
+    margin: 2rem;
+    cursor: pointer;
+    position: relative;
+    &-links {
+      position: absolute;
+      top: 10;
+      left: 10;
+      width: 100%;
+    }
+  }
 }
 .header__content {
-	padding: 12.5rem 12.5rem 0rem 12.5rem;
-	@include respond(phone) {
-		padding: 12.5rem 0.5rem 0rem 0.5rem;
-	}
+  padding: 6.5rem 12.5rem 0rem 12.5rem;
+  @include respond(phone) {
+    padding: 6.5rem 0.5rem 0rem 0.5rem;
+  }
 }
 .padding-offset {
-	padding-top: 26rem !important;
+  padding-top: 18rem !important;
 }

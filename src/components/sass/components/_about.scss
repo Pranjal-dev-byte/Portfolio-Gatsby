@@ -1,23 +1,15 @@
 .about {
-	&__content {
-		max-width: 210ch;
-		&--block {
-			padding: 2rem 3rem;
-		}
-		&--text {
-			font-size: 2rem;
-		}
-	}
-	&__highlited {
-		text-transform: uppercase;
-		background: -webkit-linear-gradient(
-			to right,
-			#0099f7,
-			#f11712
-		); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #0099f7, #f11712);
-		-webkit-background-clip: text;
-		background-clip: text;
-		color: transparent;
-	}
+  &__content {
+    max-width: 210ch;
+    &--block {
+      padding: 2rem 3rem;
+    }
+    &--text {
+      font-size: 2rem;
+    }
+  }
+  &__highlited {
+    text-transform: uppercase;
+    color: $color-white;
+  }
 }
