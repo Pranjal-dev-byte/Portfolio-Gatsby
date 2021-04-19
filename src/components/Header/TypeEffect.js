@@ -11,7 +11,7 @@ const TypeEffect = () => {
       'Web Developer',
       'Full Stack Developer',
       'Software Engineer',
-      'Can bring your product to life :-)',
+      'Can bring your product to life&#128578;',
     ];
     let masterTL = gsap.timeline({ repeat: -1 });
     words.forEach((word) => {
