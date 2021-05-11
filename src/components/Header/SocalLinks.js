@@ -42,7 +42,7 @@ const SocalLinks = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://drive.google.com/file/d/1p1FJBKlal1m8yIQHCoAxq289ooI6H6FS/view?usp=sharing"
+          href="https://drive.google.com/file/d/1_jzBBsMwJkzJlIYAh55VTwDZXnpyk-Y0/view?usp=sharing"
           className="header__resume"
         >
           Resume
