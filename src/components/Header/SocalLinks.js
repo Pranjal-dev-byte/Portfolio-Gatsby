@@ -1,7 +1,8 @@
-import React from 'react';
-import linkedIn from '../../img/linked.svg';
-import git from '../../img/github.svg';
-import insta from '../../img/insta.svg';
+import React from "react";
+import linkedIn from "../../img/linked.svg";
+import git from "../../img/github.svg";
+import insta from "../../img/insta.svg";
+import resume from "../../static/resume.pdf";
 
 const SocalLinks = () => {
   return (
@@ -39,12 +40,7 @@ const SocalLinks = () => {
         className="btn btn-white btn-medium u-margin-medium-top"
         id="animateSocial"
       >
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://drive.google.com/file/d/1_jzBBsMwJkzJlIYAh55VTwDZXnpyk-Y0/view?usp=sharing"
-          className="header__resume"
-        >
+        <a target="_blank" rel="noreferrer" href={resume}>
           Resume
         </a>
       </button>
