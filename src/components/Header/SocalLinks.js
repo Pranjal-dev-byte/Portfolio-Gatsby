@@ -40,7 +40,12 @@ const SocalLinks = () => {
         className="btn btn-white btn-medium u-margin-medium-top"
         id="animateSocial"
       >
-        <a target="_blank" rel="noreferrer" href={resume}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={resume}
+          className="resume__link"
+        >
           Resume
         </a>
       </button>

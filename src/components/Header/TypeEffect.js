@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -8,10 +8,10 @@ const TypeEffect = () => {
   let text = useRef(null);
   useEffect(() => {
     const words = [
-      'Web Developer',
-      'Full Stack Developer',
-      'Software Engineer',
-      'Can bring your product to life&#128578;',
+      "Web Developer",
+      "Full Stack Developer",
+      "Software Engineer",
+      "Can bring your product to life",
     ];
     let masterTL = gsap.timeline({ repeat: -1 });
     words.forEach((word) => {
