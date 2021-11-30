@@ -1,13 +1,20 @@
 *,
 ::before,
 ::after {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body {
   // font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #396afc;
+}
+.resume__link {
+  font-size: 1.8em;
 }
 .heading__primary {
   color: rgb(82, 136, 252);
