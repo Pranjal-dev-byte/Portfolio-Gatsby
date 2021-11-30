@@ -17,8 +17,12 @@
     #1488cc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  @include respond(tab-port) {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 }
 .section__projects {
   display: flex;
