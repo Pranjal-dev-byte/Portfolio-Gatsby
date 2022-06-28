@@ -37,6 +37,7 @@ a {
     }
   }
   &--sub {
+    z-index: 2;
     background: -webkit-linear-gradient(
       to right,
       #0099f7,

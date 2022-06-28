@@ -16,8 +16,8 @@ const Header = (props) => {
    // this customizes the component tsParticles installation
   const customInit=(engine)=> {
     // this adds the preset to tsParticles, you can safely use the
-    console.log(engine)
-    // loadFountainPreset(engine);
+    // console.log(engine)
+    loadFountainPreset(engine);
   }
   const options = {
     preset: "fountain",
