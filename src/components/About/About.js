@@ -18,10 +18,9 @@ const About = () => {
         <div className="about__content--block" ref={block1} id="blockOne">
           <h3 className="heading__tertiary u-margin-small">background</h3>
           <p className="about__content--text">
-            I'm a <span className="about__highlited">Final year undergrad</span>
+            I'm a <span className="about__highlited">Full Stack Developer</span>
             <span>&nbsp;</span>
-            pursuing Bachelors of Technology (B.Tech.) in Information
-            Technology.
+            currently working for Accenture .
           </p>
         </div>
         <div className="about__content--block" ref={block2} id="blockTwo">
