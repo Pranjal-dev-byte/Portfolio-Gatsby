@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import blog from '../../img/blog-proj.svg';
 import ecom from '../../img/ecom-proj.svg';
 import ScrollAnimation from '../ScrollAnmation';
-import train from '../../img/train.svg';
 import goat from '../../img/GOAT.svg';
 import portfolio from '../../img/portfolio.svg';
 
