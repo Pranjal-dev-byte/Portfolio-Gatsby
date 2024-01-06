@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import NavLinks from './NavLinks';
+import NavSkeleton from './NavSkeleton';
 import BrandLogo from './BrandLogo';
 import ham from '../../img/ham.png';
 
 const Navbar = ({ props }) => {
+	const [isLoading, setIsLoading] = useState(true)
 	let defaultWidth;
 	const [toggle, setToggle] = useState(false);
 
@@ -22,6 +24,9 @@ const Navbar = ({ props }) => {
 		window.addEventListener('resize', updateWindowWidth);
 		return () => window.removeEventListener('resize', updateWindowWidth);
 	}, []);
+	setTimeout(()=>{
+		setIsLoading(false)
+	},5000)
 	return (
 		<React.Fragment>
 			<BrandLogo />
@@ -36,8 +41,7 @@ const Navbar = ({ props }) => {
 					/>
 					{toggle && <NavLinks props={props} />}
 				</React.Fragment>
-			) : (
-				<NavLinks props={props} />
+			) : (isLoading?<NavSkeleton />:<NavLinks props={props} />
 			)}
 		</React.Fragment>
 	);
