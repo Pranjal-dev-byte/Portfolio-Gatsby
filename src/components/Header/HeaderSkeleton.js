@@ -1,20 +1,12 @@
 import React from 'react';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css'
+import spinner from '../../img/spinner.svg';
 
 const HeaderSkeleton = () => {
 	return (
-        <SkeletonTheme baseColor="#f1f1f3" highlightColor="#c6c6cd">
-            <div >
-            <Skeleton style={{
-                width:300,
-                display: 'flex',
-                lineHeight: 2,
-                padding: '1rem',
-                borderRadius:'5px'
-            }} count={3} duration={2.5} />
-            </div> 
-        </SkeletonTheme>
+        <div className='header__loader'>
+            <img src={spinner} alt="LinkedIn Profile" />
+            <span className="footer__name"  style={{transform: "translateX(41px)"}} >loading...</span>
+        </div>
 	);
 };
 

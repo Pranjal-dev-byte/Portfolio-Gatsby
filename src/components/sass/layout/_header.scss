@@ -33,4 +33,8 @@
       color: rgb(82, 136, 252);
     }
   }
+  &__loader{
+    display: flex;
+    flex-direction: column;
+  }
 }

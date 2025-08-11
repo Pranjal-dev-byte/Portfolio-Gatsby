@@ -132,7 +132,7 @@ const Header = (props) => {
   const [isLoading, setIsLoading] = useState(true)
 	setTimeout(()=>{
 		setIsLoading(false)
-	},5000)
+	},2000)
   return (
     <div>
       <div className="header">
