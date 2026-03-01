@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Particles from 'react-tsparticles';
-import { loadFountainPreset } from "tsparticles-preset-fountain";
+import { loadFountainPreset } from "@tsparticles/preset-fountain";
 import HeaderMain from './HeaderMain';
 import Navbar from './Navbar';
 import HeaderSkeleton from './HeaderSkeleton';
