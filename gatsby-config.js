@@ -5,7 +5,7 @@ module.exports = {
 	plugins: [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-sass`,
-		`gatsby-plugin-advanced-sitemap`,
+		`gatsby-plugin-sitemap`,
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
