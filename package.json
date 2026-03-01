@@ -34,6 +34,6 @@
     "react-tsparticles": "^2.1.0",
     "sass": "^1.53.0",
     "tsparticles-engine": "^2.1.0",
-    "tsparticles-preset-fountain": "^2.1.0"
+  "@tsparticles/preset-fountain": "^3.2.0"
   }
 }
